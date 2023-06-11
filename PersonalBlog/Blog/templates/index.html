@@ -6,6 +6,17 @@
     <title>Document</title>
   </head>
   <body>
-    <h1>Hola mundo</h1>
+    <header>
+      <h1>Mi Blog Personal</h1>
+    </header>
+
+    {% for post in posts %}
+
+    <div>
+      <h2>{{ post.title }}</h2>
+      <p>{{ post.text }}</p>
+    </div>
+
+    {% endfor %}
   </body>
 </html>
