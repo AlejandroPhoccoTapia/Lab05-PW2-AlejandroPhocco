@@ -11,17 +11,10 @@
   <body>
     <header class="header">
       <h1 class="header__h1">Mi Blog Personal</h1>
-      <a href="{% url 'new_post' %}" class="header__a">Añadir</a>
     </header>
 
     <main class="main">
-      <article class="article">
-        <h2 class="article__h2">
-          <a href="" class="article__a">{{ post.title }}</a>
-        </h2>
-        <a href="{% url 'edit_post' post.id %}">Editar</a>
-        <p class="article__p">{{ post.text }}</p>
-      </article>
+      <h1>Aqui editaras el pos {{ post.id }} 7u7</h1>
     </main>
   </body>
 </html>

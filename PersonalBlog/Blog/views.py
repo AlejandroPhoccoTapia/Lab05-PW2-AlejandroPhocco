@@ -13,3 +13,7 @@ def newPost(request):
 def post(request, id):
     post = Post.objects.get(id=id)
     return render(request, 'post.html', {'post': post})
+
+def editPost(request, id):
+    post = Post.objects.get(id=id)
+    return render(request, 'editPost.html', {'post' : post})
