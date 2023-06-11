@@ -1,22 +1,27 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{% static 'styles/style.css' %}" />
     <title>Document</title>
   </head>
   <body>
-    <header>
-      <h1>Mi Blog Personal</h1>
+    <header class="header">
+      <h1 class="header__h1">Mi Blog Personal</h1>
     </header>
 
-    {% for post in posts %}
+    <main class="main">
+      {% for post in posts %}
 
-    <div>
-      <h2>{{ post.title }}</h2>
-      <p>{{ post.text }}</p>
-    </div>
+      <article class="article">
+        <h2 class="article__h2">{{ post.title }}</h2>
+        <p class="article__p">{{ post.text }}</p>
+      </article>
 
-    {% endfor %}
+      {% endfor %}
+    </main>
   </body>
 </html>
