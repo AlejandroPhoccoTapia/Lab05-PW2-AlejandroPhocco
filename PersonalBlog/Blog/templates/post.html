@@ -15,18 +15,12 @@
     </header>
 
     <main class="main">
-      {% for post in posts %}
-
       <article class="article">
         <h2 class="article__h2">
-          <a href="{% url 'post' post.id %}" class="article__a"
-            >{{ post.title }}</a
-          >
+          <a href="" class="article__a">{{ post.title }}</a>
         </h2>
         <p class="article__p">{{ post.text }}</p>
       </article>
-
-      {% endfor %}
     </main>
   </body>
 </html>

@@ -53,6 +53,11 @@ body {
   margin: 0;
 }
 
+.article__a {
+  text-decoration: none; 
+  color: hsl(0 0% 0%);
+} 
+
 .article__p {
   margin: 0;
   text-overflow: clip;

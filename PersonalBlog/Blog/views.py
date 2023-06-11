@@ -9,3 +9,7 @@ def index(request):
 
 def newPost(request):
     return render(request, 'newPost.html')
+
+def post(request, id):
+    post = Post.objects.get(id=id)
+    return render(request, 'post.html', {'post': post})
