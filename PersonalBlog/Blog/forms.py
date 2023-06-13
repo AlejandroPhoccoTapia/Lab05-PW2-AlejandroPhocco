@@ -6,4 +6,4 @@ class CreateNewPost(forms.ModelForm):
 
     class Meta:
         model = Post
-        fields = ['text', 'title',]
+        fields = ['title', 'text',]
